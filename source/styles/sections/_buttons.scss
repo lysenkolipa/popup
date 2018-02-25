@@ -1,0 +1,37 @@
+.button {
+  width: 103px;
+  height: 40px;
+  background: #252525;
+  color: #ffffff;
+  font-family:'Arial Rounded MT Bold', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 3px;
+  border: none;
+}
+.button--fb,
+.button--google {
+  width: 300px;
+  margin: 10px auto;
+  line-height: 14px;
+  position: relative;
+}
+.button--fb {
+  background: #3e5b96;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.button--google {
+  background: #dd5342;
+}
+.img--facebook,
+.img--google {
+  position: absolute;
+  content: '';
+  top:8px;
+  left:14px;
+  text-align: right;
+}
+.btn-text {
+  padding-left: 29px;
+}

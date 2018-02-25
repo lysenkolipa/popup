@@ -1,0 +1,22 @@
+.col-1-of-2 {
+  box-sizing: border-box;
+  height: 249px;
+  @media (max-width: 768px) {
+    height: unset;
+  }
+
+  &:first-child {
+    border-right: 1px solid rgba(0,0,0,0.15);
+
+    @media (max-width: 768px) {
+      border-right: unset;
+      border-top: 1px solid rgba(0,0,0,0.15);
+      order: 2;
+      padding-top: 23px;
+      text-align: center;
+    }
+
+
+  }
+}
+

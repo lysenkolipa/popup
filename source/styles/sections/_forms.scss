@@ -1,0 +1,40 @@
+[type="text"],
+[type="email"],
+[type="password"],
+textarea {
+  width: 300px;
+  height: 40px;
+  border-radius: 3px;
+  outline:none;
+  border: 1px;
+  margin-top: 4px;
+
+
+}
+
+[type="checkbox"] {}
+
+[type="radio"] {}
+
+.form-field {
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #333333;
+  padding-left: 60px;
+  margin-bottom: 21px;
+  @media (max-width: 768px) {
+    padding-left: 0;
+  }
+
+	&:last-child {
+      padding-top: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  & a {
+    padding-top: 9px;
+    color: #000000;
+  }
+}
