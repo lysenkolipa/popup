@@ -7,15 +7,14 @@
   border: 1px solid #cecece;
   border-top: 2px solid #e62b1e;
   width:840px;
+  box-shadow: 0 3px 2px -2px gray;
 
   @media (max-width: 768px) {
     width:482px;
 
   }
 
-  &__header {
-    position: relative;
-  }
+  &__header { position: relative; }
   &__close {
     position: absolute;
     content: '';
