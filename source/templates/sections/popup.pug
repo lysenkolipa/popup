@@ -1,0 +1,33 @@
+.popup
+    .popup__header
+        button.popup__close
+            img.popup__close--img(src="../images/close.jpg" alt="close img")
+        .popup__header-text
+            | Log in to the Site
+        .popup__body
+            .col-1-of-2
+                button.button.button--fb
+                    img.img--facebook(src="../images/vector-smart-facebook.png" alt="facebook")
+                    span.btn-text Log in with Facebook
+                button.button.button--google
+                    img.img--google(src="../images/vector-smart-google+.png" alt="google+")
+                    span.btn-text Log in with Google +
+            .col-1-of-2.form-block
+                form(action="")
+                    .form-field.form-field--error
+                        label(for="login") Login
+                        input#login(type="email" name="login")
+                    .form-field
+                        label(for="password") Password
+                        input#password(type="password" name="password")
+                    .form-field
+                        label(for="remember")
+                            input.blue(type="checkbox" name="remember" id="remember")
+                            span Remember me
+
+                    .form-field
+                        button.button Log in
+                        a(href="#") Need help logging in?
+        .popup__footer
+            | Dont have an account yet?
+            a(href="#") Sign up
