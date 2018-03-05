@@ -42,12 +42,6 @@ gulp.task('clean', function del(cb){
     return rimraf('build', cb);
 });
 
-/*------------ Copy fonts -------------*/
-gulp.task('copy:fonts', function(){
-    return gulp.src('./source/fonts/**/*.*')
-        .pipe(gulp.dest('build/fonts'));
-});
-
 /*------------ Copy images -------------*/
 gulp.task('copy:images', function(){
     return gulp.src('./source/images/**/*.*')
@@ -55,7 +49,7 @@ gulp.task('copy:images', function(){
 });
 
 /*------------ Copy -------------*/
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
+gulp.task('copy', gulp.parallel('copy:images'));
 
 /*------------ Watchers -------------*/
 gulp.task('watch', function() {

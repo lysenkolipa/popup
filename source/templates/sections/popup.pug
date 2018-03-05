@@ -21,10 +21,8 @@
                         label(for="password") Password
                         input#password(type="password" name="password")
                     .form-field
-                        label(for="remember")
-                            input.blue(type="checkbox" name="remember" id="remember")
-                            span Remember me
-
+                        input.info-checkbox(type="checkbox" id="ship-add" name="remember")
+                        label.info-label-for-checkbox(for="ship-add") Remember me
                     .form-field
                         button.button(onclick="validate(this.form)") Log in
                         a(href="#") Need help logging in?
