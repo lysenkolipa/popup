@@ -13,20 +13,20 @@
                     img.img--google(src="../images/vector-smart-google+.png" alt="google+")
                     span.btn-text Log in with Google +
             .col-1-of-2.form-block
-                form(action="")
-                    .form-field.form-field--error
+                form(id="loginform" action="" method="get" role="form")
+                    .form-field
                         label(for="login") Login
-                        input#login(type="email" name="login")
+                        input(id="login" name="email" type="email")
                     .form-field
                         label(for="password") Password
-                        input#password(type="password" name="password")
+                        input(id="password" name="password" type="password")
                     .form-field
-                        input.info-checkbox(type="checkbox" id="ship-add" name="remember")
-                        label.info-label-for-checkbox(for="ship-add") Remember me
+                        input.info-checkbox(id="ship_add" name="remember" type="checkbox")
+                        label.info-label-for-checkbox(for="ship_add") Remember me
                     .form-field
-                        button.button(onclick="validate(this.form)") Log in
+                        button.button(id="submit_button" type="submit" value="LogIn") Log in
                         a(href="#") Need help logging in?
         .popup__footer
-            | Dont have an account yet?
+            | Don't have an account yet?
             a(href="#") Sign up
 
